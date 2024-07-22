@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nim"
+        android:layout_below="@id/editUsername"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/editJurusan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/jurusan"
+        android:layout_below="@id/editNim"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editGender"
+        android:hint="@string/gender"
+        android:layout_below="@+id/editJurusan"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:inputType="text"
+        android:autofillHints="Jurusan" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_update"
+        android:layout_below="@id/editGender"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_delete"
+        android:layout_below="@id/editGender"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/btnUpdate"
+        android:layout_marginStart="20dp"/>
+</RelativeLayout>

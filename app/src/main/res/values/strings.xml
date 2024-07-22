@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FirebaseCRUD</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="nim">Nim</string>
+    <string name="gender">Gender</string>
+    <string name="btn_regis">Register</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+</resources>

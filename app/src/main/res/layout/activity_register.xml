@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRegister"
+        android:text="@string/register"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegUsername"
+        android:hint="@string/username"
+        android:layout_below="@+id/tvRegister"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:inputType="text"
+        android:autofillHints="Username" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegNim"
+        android:hint="@string/nim"
+        android:layout_below="@+id/RegUsername"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:inputType="text"
+        android:autofillHints="Nim" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegJurusan"
+        android:hint="@string/jurusan"
+        android:layout_below="@+id/RegNim"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:inputType="text"
+        android:autofillHints="Jurusan" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegGender"
+        android:hint="@string/gender"
+        android:layout_below="@+id/RegJurusan"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:inputType="text"
+        android:autofillHints="Jurusan" />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegis"
+        android:layout_below="@+id/RegGender"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnLogin"
+        android:text="@string/register"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/RegGender"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:text="@string/btn_login"/>
+</RelativeLayout>
